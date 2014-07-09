@@ -1,0 +1,36 @@
+
+html
+  head
+
+    title #{title} - Hello Side 
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+ 
+    header
+      h1 Este es mi lindo sitio
+    .container
+      .main-content
+        block content
+        p 
+          |Esta es la introduccion a mi sitio
+          |Este es un ejemplo de 
+          | Texto largo
+        -var name = 'oscar';
+        ul
+          li = #{name}
+      .sidebar
+        block sidebar
+          p este es el sidebar
+           .widget
+      h1 Widget
+          p
+            | Sed auctor neque eu tellus rhoncus ut
+            | eleifend nibh porttitor. Ut in nulla enim.
+          p
+            | Vivamus hendrerit arcu sed erat molestie
+            | vehicula.
+          footer
+            p Esto esta genial 
+
+    
